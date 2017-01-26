@@ -35,12 +35,12 @@ int main(int argc, char *argv[])
 	i = 0;
 	size = 0;
 
-	input = scanf("%d", &size); //Captura o tamanho do frame 
+	input = scanf("%d", &size); //Captura o tamanho do array para os valores a serem ordenados 
 
 	//Alocação de memoria 
     values = (int*) malloc (V_Size * sizeof(int));
 
-	// Técnica utilizada para capturar a sequencia de páginas da entrada 
+	// Técnica utilizada para capturar a sequencia de valores do arquivo de entrada 
 	while(true)
 	{
 		input = scanf("%d", &values[i]); // Insere os valores a serem ordenados no array 
