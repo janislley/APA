@@ -11,7 +11,7 @@
 using namespace std;
 
 //V_Size é o tamanho do vetor de valores para ser carregado na memoria
-int V_Size;
+int V_Size, size;
 
 // Declaração do ponteiro para o array de valores
 int *values;
@@ -29,11 +29,13 @@ void Heap_Sort(int values[], int size);
 
 int main(int argc, char *argv[])
 {
-	int i, input, size;
+	int i, input;
 
     V_Size = 100; //Inicialização padrão
 	i = 0;
 	size = 0;
+
+	input = scanf("%d", &size); //Captura o tamanho do frame 
 
 	//Alocação de memoria 
     values = (int*) malloc (V_Size * sizeof(int));
@@ -49,7 +51,6 @@ int main(int argc, char *argv[])
                         break;
                 }
 		i++;
-		size = i; //determina o tamanho do array de valores 
 	}
 
 	//printf("%d", size);
@@ -143,7 +144,7 @@ int partition (int values[], int low, int high)
     int pivot = values[high];    // pivot
     int i = (low - 1); // indice do elemento menor
  
-    for (int j = low; j <= high- 1; j++)
+    for (int j = low; j <= high - 1; j++)
     {
 	// Se o elemento atual for menor que
 	// igual ao pivot
