@@ -278,19 +278,3 @@ void Heap_Sort(int values[], int size)
         heapify(values, i, 0);
     }
 }
-
-void Heap_Sort()
-{
-}
-/*
-void PrintUsage(char* option)
-{
-    	std::cout << "----------------------------------------------------\n"
-        << "Selection_Sort:\t" << option << " 1 <arquivo_entrada> <arquivo_saida>\n"
-        << "Insertion_Sort:\t" << option << " 2 <arquivo_entrada> <arquivo_saida>\n"
-        << "Merge_Sort:\t" << option << " 3 <arquivo_entrada> <arquivo_saida>\n"
-        << "Quick_Sort:\t" << option << " 4 <arquivo_entrada> <arquivo_saida>\n"
-        << "Heap_Sort:\t" << option << " 5 <arquivo_entrada> <arquivo_saida>\n"
-	<< "----------------------------------------------------\n";
-}
-*/
